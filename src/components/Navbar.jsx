@@ -46,7 +46,7 @@ const NavbarPage = () => {
               variant="h6"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -71,20 +71,12 @@ const NavbarPage = () => {
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
+                anchorOrigin={{vertical: 'bottom',horizontal: 'left',}}
                 keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
+                transformOrigin={{ vertical: 'top', horizontal: 'left', }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: 'block', md: 'none' },
-                }}
+                sx={{ display: { xs: 'block', md: 'none' }, }}
               >
                 <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/">Home</Link></Typography></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/calculate">Calculation</Link></Typography></MenuItem>

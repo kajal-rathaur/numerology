@@ -10,7 +10,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { Button } from "@mui/material";
 
 const Calculation = () => {
-    const [name, setName] = useState();
+    const [name, setName] = useState("");
     const [dateF, setDateF] = useState("");
     const [dateM, setDateM] = useState("");
 
@@ -31,7 +31,7 @@ const Calculation = () => {
     }
     const nameNumber = () => {
         let sum = 0;
-        "Kajal Rathaur".split('').forEach(e => {
+        "Ashwin Sinha".split('').forEach(e => {
             if (e == "A" || e == "a" || e == "I" || e == "i" || e == "J" || e == "j" || e == "Q" || e == "q" || e == "Y" || e == "y")
                 sum += 1;
             else if (e == "B" || e == "b" || e == "K" || e == "k" || e == "R" || e == "r")
@@ -55,15 +55,13 @@ const Calculation = () => {
     }
     return (
         <div>
-            {/* <Navbar/> */}
-            <h1>Female</h1>
             <TextField
                 id="name"
                 label="Name"
-                helperText="Some important text"
+                helperText="Enter the name"
                 onChange={(e) => setName(e)}
             />
-            <h1>{name}</h1>
+            <h1>{name}llll</h1>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DatePicker onChange={(date) => setDateF(dateSetter(new Date(date)))} />
             </LocalizationProvider>
