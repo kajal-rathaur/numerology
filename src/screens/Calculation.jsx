@@ -11,6 +11,7 @@ import { Button } from "@mui/material";
 
 const Calculation = () => {
     const [name, setName] = useState("");
+    const [nameNum, setNameNum] = useState(0);
     const [dateF, setDateF] = useState("");
     const [dateM, setDateM] = useState("");
 
@@ -23,15 +24,20 @@ const Calculation = () => {
         let bhagyank = singledigit((y + m + d).toString());
         return (y + '/' + m + '/' + d + '/' + mulank + '/' + bhagyank)
     }
+
+    useEffect(() => {
+        nameNumber(name);
+    },[name])
+
     const singledigit = (r) => {
         let s = 0;
         r.split('').forEach(item => s += parseInt(item));
         if (s > 9) return singledigit(s.toString());
         return s;
     }
-    const nameNumber = () => {
+    const nameNumber = (val) => {
         let sum = 0;
-        "Ashwin Sinha".split('').forEach(e => {
+        val.split('').forEach(e => {
             if (e == "A" || e == "a" || e == "I" || e == "i" || e == "J" || e == "j" || e == "Q" || e == "q" || e == "Y" || e == "y")
                 sum += 1;
             else if (e == "B" || e == "b" || e == "K" || e == "k" || e == "R" || e == "r")
@@ -51,23 +57,24 @@ const Calculation = () => {
             else if (e == " ")
                 sum += 0;
         });
-        console.log("Name Number is here", singledigit((sum).toString()));
+        // console.log("Name Number is here", singledigit((sum).toString()));
+        setNameNum(singledigit((sum).toString()))
     }
     return (
-        <div>
+        <div style={{ marginTop: "20px" }}>
             <TextField
                 id="name"
                 label="Name"
                 helperText="Enter the name"
-                onChange={(e) => setName(e)}
+                onChange={(e) => setName(e.target.value)}
             />
-            <h1>{name}llll</h1>
+            <h1>{name} : ({nameNum})</h1>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DatePicker onChange={(date) => setDateF(dateSetter(new Date(date)))} />
             </LocalizationProvider>
             <LoshuGrid dob={dateF} />
 
-            <Button onClick={() => nameNumber()}>Calculate name number</Button>
+            {/* <Button onClick={() => nameNumber(name)}>Calculate name number</Button> */}
             {/* <h1>Male</h1>
             <TextField
                 id="name"
