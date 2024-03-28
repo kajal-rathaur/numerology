@@ -4,6 +4,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Box, Typography } from "@mui/material";
 
 const LoshuGrid = ({ dob }) => {
+
     const [dobData, setDobData] = useState({
         1: "",
         2: "",
@@ -47,42 +48,46 @@ const LoshuGrid = ({ dob }) => {
 
         setDobData({ ...dobData, 1: a, 2: b, 3: c, 4: d, 5: e, 6: f, 7: g, 8: h, 9: i });
     };
-    // console.log('dobData', dobData);
 
     return (
         <>
-            <Box width={"300px"}>
+            <Box width={"300px"}
+            sx={{
+                border: '1px solid #a18b5c70', 
+                boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.1)',
+              }}
+            >
                 <Grid container>
-
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"0px solid black"} borderRight={"0px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['4']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"0px solid #a18b5c70"} borderRight={"0px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['4']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"0px solid black"} borderRight={"0px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['9']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"0px solid #a18b5c70"} borderRight={"0px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['9']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"0px solid black"} borderRight={"1px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['2']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"0px solid #a18b5c70"} borderRight={"1px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['2']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"0px solid black"} borderRight={"0px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['3']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"0px solid #a18b5c70"} borderRight={"0px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['3']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"0px solid black"} borderRight={"0px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['5']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"0px solid #a18b5c70"} borderRight={"0px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['5']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"0px solid black"} borderRight={"1px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['7']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"0px solid #a18b5c70"} borderRight={"1px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['7']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"1px solid black"} borderRight={"0px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['8']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"1px solid #a18b5c70"} borderRight={"0px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['8']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"1px solid black"} borderRight={"0px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['1']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"1px solid #a18b5c70"} borderRight={"0px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['1']}</Typography>
                     </Grid>
-                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid black"} borderLeft={"1px solid black"} borderBottom={"1px solid black"} borderRight={"1px solid black"} height={"100px"}>
-                        <Typography variant="p" component="p">{dobData['6']}</Typography>
+                    <Grid item xs={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} borderTop={"1px solid #a18b5c70"} borderLeft={"1px solid #a18b5c70"} borderBottom={"1px solid #a18b5c70"} borderRight={"1px solid #a18b5c70"} height={"100px"}>
+                        <Typography variant="p" component="p" sx={{color: "#a18b5c", fontWeight: "bold", fontFamily: "math", }}>{dobData['6']}</Typography>
                     </Grid>
                 </Grid>
             </Box>
+
             {/* <p>Mulank : {mulank}</p>
             <p>Bhagyank : {bhagyank}</p> */}
         </>

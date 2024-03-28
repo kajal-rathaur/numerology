@@ -4,9 +4,11 @@ import Container from '@mui/material/Container';
 import NavbarPage from './components/Navbar';
 function App() {
   return (
-    <div className='App'>
-      <Container maxWidth="lg" style={{paddingBottom: "10vh"}}>
-        <NavbarPage/>
+    <div className='App' style={{ height: '100%' }}>
+    {/* <div className='App' style={{ height: '100vh', backgroundColor: '#cbc8dd', }}> */}
+      {/* <Container maxWidth="lg"> */}
+      <Container maxWidth="lg" style={{ paddingBottom: "10vh" }}>
+        <NavbarPage />
         <RoutingPage />
       </Container>
     </div>

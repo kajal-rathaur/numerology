@@ -75,10 +75,11 @@ const Information = () => {
     return (
         <>
             {number > 0 ? <><h2 onClick={() => setNumber(0)}>Back</h2><CardDetail number={number} /></> :
-                <Grid container rowSpacing={3} columnSpacing={3}>
+                <Grid container rowSpacing={3} columnSpacing={3} sx={{ marginTop: "68.5px" }}>
                     {cardData.map((card) => (
                         <Grid item xs={3} onClick={() => setNumber(card.title)}>
-                            <Card title={card.title} image={card.image} description1={card.description1} description2={card.description2} number={card.number}/>
+                            <Card title={card.title} image={card.image} description1={card.description1} description2={card.description2} number={card.number} />
+
                         </Grid>
                     ))}
                 </Grid>}
