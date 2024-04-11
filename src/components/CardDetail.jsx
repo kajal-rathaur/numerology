@@ -106,18 +106,18 @@ const CardDetail = ({ number }) => {
 
     return (
         <div className="infoDiv">
-            <h1 className="globalStyle">Number : {number}</h1>
-            <h3 className="globalStyle">{cardNumber && cardNumber.personality}</h3>
-            <p className="globalStyle">{cardNumber && cardNumber.personalityDesc}</p>
-            <h3 className="globalStyle">Strength</h3>
-            <p className="globalStyle">{cardNumber && cardNumber.strength}</p>
+            <h2 style={{ marginBottom: "12px", fontSize: "22px", color: "#313131" }}>Number : {number}</h2>
+            <h3 style={{ textAlign: "justify", color: "#313131" }}>{cardNumber && cardNumber.personality}</h3>
+            <p style={{color: "#616161"}}>{cardNumber && cardNumber.personalityDesc}</p>
+            <h3 style={{ textAlign: "justify", color: "#313131" }}>Strength</h3>
+            <p style={{color: "#616161"}}>{cardNumber && cardNumber.strength}</p>
 
-            <h3 className="globalStyle">Potential Challenges</h3>
-            <p className="globalStyle">{cardNumber && cardNumber.challenge}</p>
-            <h3 className="globalStyle">Associations</h3>
-            <p className="globalStyle">{cardNumber && cardNumber.association}</p>
-            <h3 className="globalStyle">{cardNumber && cardNumber.descHeadline}</h3>
-            <p className="globalStyle">{cardNumber && cardNumber.description}</p>
+            <h3 style={{ textAlign: "justify", color: "#313131" }}>Potential Challenges</h3>
+            <p style={{color: "#616161"}}>{cardNumber && cardNumber.challenge}</p>
+            <h3 style={{ textAlign: "justify", color: "#313131" }}>Associations</h3>
+            <p style={{color: "#313131"}}>{cardNumber && cardNumber.association}</p>
+            <h3 style={{ textAlign: "justify", color: "#313131" }}>{cardNumber && cardNumber.descHeadline}</h3>
+            <p style={{color: "#616161"}}>{cardNumber && cardNumber.description}</p>
         </div>
     )
 }
