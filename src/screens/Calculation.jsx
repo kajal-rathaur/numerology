@@ -61,8 +61,8 @@ const Calculation = () => {
 
   return (
     <div style={{ marginTop: "68.5px", paddingTop: '20px', display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <h1 style={{ color: '#6d5e39' }}>Unveiling Your Life Path: A Numerology Calculator</h1>
-      <p style={{color: '#313131'}}>Welcome to the world of numerology, where numbers hold the key to unlocking your inner potential and understanding your life's journey!
+      <h1 style={{ color: '#a18b5c' }}>Unveiling Your Life Path: A Numerology Calculator</h1>
+      <p style={{color: '#fdfdfda1'}}>Welcome to the world of numerology, where numbers hold the key to unlocking your inner potential and understanding your life's journey!
         This interactive calculator empowers you to discover your core numerology numbers, offering valuable insights into your personality,
         strengths, challenges, and aspirations.
         Numerology is an ancient belief system that assigns mystical or divine meaning to numbers. It suggests that the numbers associated with you,
@@ -73,8 +73,10 @@ const Calculation = () => {
           maxWidth: 345,
           width: '50%',
           padding: '30px',
-          backgroundColor: '#ffffff9c',
-          boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+          // backgroundColor: '#ffffffd4',
+          // boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+          backgroundColor: '#ffffff00',
+          boxShadow: '0 4px 8px 0 rgb(0 0 0 / 70%), 0 6px 20px 0 rgb(11 11 10 / 89%)',
           display: "grid",
           alignContent: 'space-around',
           height: "22vh",
@@ -83,7 +85,8 @@ const Calculation = () => {
           id="name"
           label="Enter your Name"
           sx={{
-            '& .MuiInputLabel-root': { color: '#96959a' },
+            // '& .MuiInputLabel-root': { color: '#96959a' },
+            '& .MuiInputLabel-root': { color: '#a18b5c' },
             backgroundColor: 'transparent',
             boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.1)',
             transition: '0.5s',
@@ -97,14 +100,13 @@ const Calculation = () => {
           }}
           onChange={(e) => setName(e.target.value)}
         />
-        {/* <h1>{name} : ({nameNum})</h1> */}
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
             onChange={(date) => setDateF(dateSetter(new Date(date)))}
             sx={{
               backgroundColor: 'transparent',
               boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.1)',
-              '& .MuiInputBase-input': { color: '#000000' },
+              '& .MuiInputBase-input': { color: '#a18b5c' },
             }}
           />
         </LocalizationProvider>
@@ -118,17 +120,17 @@ const Calculation = () => {
       }
 
       <ul>
-        <li style={{color: "#313131"}}><strong style={{ color: '#6d5e39' }}>Destiny Number / Bhagyank</strong> Bhagyank, also known as the Destiny Number, Life Path Number, or Expression Number,
+        <li style={{color: "#fdfdfda1"}}><strong style={{ color: '#a18b5c' }}>Destiny Number / Bhagyank</strong> Bhagyank, also known as the Destiny Number, Life Path Number, or Expression Number,
           is a core number in numerology that signifies your potential life path, aspirations,
           and the direction your life might take. It's believed to reveal your inherent talents,
           challenges, and how you can fulfill your life's purpose.<br />
-          <strong style={{ color: '#6d5e39' }}>To calculate your Bhagyank, </strong>add the day, month, and year of your date of birth.
+          <strong style={{ color: '#a18b5c' }}>To calculate your Bhagyank, </strong>add the day, month, and year of your date of birth.
           If the result is a two- or three-digit number, reduce it to a single digit by adding the digits together.
         </li>
-        <li style={{color: "#313131"}}><strong style={{ color: '#6d5e39' }}>Driver Number / Mulank</strong> Mulank, also known as the Birth Number or Moolank, is a core number in Indian numerology systems like Vedic numerology
+        <li style={{color: "#fdfdfda1"}}><strong style={{ color: '#a18b5c' }}>Driver Number / Mulank</strong> Mulank, also known as the Birth Number or Moolank, is a core number in Indian numerology systems like Vedic numerology
           or Tamil numerology. It's derived solely from your date of birth and is believed to influence your
           fundamental personality traits, strengths, and potential challenges.<br />
-          <strong style={{ color: '#6d5e39' }}>To calculate your Mulank,</strong> add the digits of your day of birth. If the result is a two- or three-digit number, reduce it to a single digit by adding the digits together.
+          <strong style={{ color: '#a18b5c' }}>To calculate your Mulank,</strong> add the digits of your day of birth. If the result is a two- or three-digit number, reduce it to a single digit by adding the digits together.
         </li>
 
       </ul>

@@ -79,7 +79,6 @@ const Information = () => {
                     {cardData.map((card) => (
                         <Grid item xs={3} onClick={() => setNumber(card.title)}>
                             <Card title={card.title} image={card.image} description1={card.description1} description2={card.description2} number={card.number} />
-
                         </Grid>
                     ))}
                 </Grid>}

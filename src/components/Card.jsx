@@ -11,28 +11,31 @@ const CardPage = ({ title, description1, image, description2, number }) => {
   return (
     <Card
       sx={{
-        width: "100%", boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', transition: '0.5s',
+        width: "100%", 
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', 
+        transition: '0.5s',
         '&:hover': {
           transform: 'scale(1.1)', /* Increase size by 20% on hover */
           transition: "transform 0.4s ease"
-        }
+        },
+        backgroundColor: '#fff0'
       }}
 
     >
-      <CardMedia
+      {/* <CardMedia
         component="img"
         alt="green iguana"
         height="140"
         image={image}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#171836' }}>
+      /> */}
+      <CardContent sx={{}}>
+        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#a18b5c' }}>
           {number}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" sx={{ color: '#fdfdfda1' }}>
           {description1}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" sx={{ color: '#fdfdfda1' }}>
           {description2}
         </Typography>
       </CardContent>

@@ -106,18 +106,18 @@ const CardDetail = ({ number }) => {
 
     return (
         <div className="infoDiv">
-            <h2 style={{ marginBottom: "12px", fontSize: "22px", color: "#313131" }}>Number : {number}</h2>
-            <h3 style={{ textAlign: "justify", color: "#313131" }}>{cardNumber && cardNumber.personality}</h3>
-            <p style={{color: "#616161"}}>{cardNumber && cardNumber.personalityDesc}</p>
-            <h3 style={{ textAlign: "justify", color: "#313131" }}>Strength</h3>
-            <p style={{color: "#616161"}}>{cardNumber && cardNumber.strength}</p>
+            <h2 style={{ marginBottom: "12px", fontSize: "22px", color: "#a18b5c" }}>Number : {number}</h2>
+            <h3 style={{ textAlign: "justify", color: "#a18b5c" }}>{cardNumber && cardNumber.personality}</h3>
+            <p style={{color: "#b6b1b1"}}>{cardNumber && cardNumber.personalityDesc}</p>
+            <h3 style={{ textAlign: "justify", color: "#a18b5c" }}>Strength</h3>
+            <p style={{color: "#b6b1b1"}}>{cardNumber && cardNumber.strength}</p>
 
-            <h3 style={{ textAlign: "justify", color: "#313131" }}>Potential Challenges</h3>
-            <p style={{color: "#616161"}}>{cardNumber && cardNumber.challenge}</p>
-            <h3 style={{ textAlign: "justify", color: "#313131" }}>Associations</h3>
-            <p style={{color: "#313131"}}>{cardNumber && cardNumber.association}</p>
-            <h3 style={{ textAlign: "justify", color: "#313131" }}>{cardNumber && cardNumber.descHeadline}</h3>
-            <p style={{color: "#616161"}}>{cardNumber && cardNumber.description}</p>
+            <h3 style={{ textAlign: "justify", color: "#a18b5c" }}>Potential Challenges</h3>
+            <p style={{color: "#b6b1b1"}}>{cardNumber && cardNumber.challenge}</p>
+            <h3 style={{ textAlign: "justify", color: "#a18b5c" }}>Associations</h3>
+            <p style={{color: "#a18b5c"}}>{cardNumber && cardNumber.association}</p>
+            <h3 style={{ textAlign: "justify", color: "#a18b5c" }}>{cardNumber && cardNumber.descHeadline}</h3>
+            <p style={{color: "#b6b1b1"}}>{cardNumber && cardNumber.description}</p>
         </div>
     )
 }

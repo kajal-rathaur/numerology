@@ -54,7 +54,7 @@ const LoshuGrid = ({ dob }) => {
             <Box width={"300px"}
             sx={{
                 border: '1px solid #a18b5c70', 
-                boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.1)',
+                boxShadow: '0px 3px 5px #a18b5c82',
               }}
             >
                 <Grid container>

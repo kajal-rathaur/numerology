@@ -38,7 +38,8 @@ const NavbarPage = () => {
   };
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: '#171836', marginBottom: "10px"}} >
+      {/* <AppBar position="fixed" sx={{ backgroundColor: '#171836', marginBottom: "10px"}} > */}
+      <AppBar position="fixed" sx={{ backgroundColor: '#020204', marginBottom: "10px"}} >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex', color: '#a18b5c' }, mr: 1 }} />
