@@ -11,7 +11,7 @@ function App() {
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }}>
-      <Container maxWidth="lg" style={{ paddingBottom: "10vh" }}>
+      <Container maxWidth="lg">
         <NavbarPage />
         <RoutingPage />
       </Container>

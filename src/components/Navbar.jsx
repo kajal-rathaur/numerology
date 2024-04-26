@@ -39,7 +39,7 @@ const NavbarPage = () => {
   return (
     <>
       {/* <AppBar position="fixed" sx={{ backgroundColor: '#171836', marginBottom: "10px"}} > */}
-      <AppBar position="fixed" sx={{ backgroundColor: '#020204', marginBottom: "10px"}} >
+      <AppBar position="fixed" sx={{ backgroundColor: '#020204', marginBottom: "10px",color: '#fdfdfda1'}} >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex', color: '#a18b5c' }, mr: 1 }} />
@@ -77,12 +77,12 @@ const NavbarPage = () => {
                 transformOrigin={{ vertical: 'top', horizontal: 'left', }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
-                sx={{ display: { xs: 'block', md: 'none' }, }}
+                sx={{ display: { xs: 'block', md: 'none' } }}
               >
                 <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/">Home</Link></Typography></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/calculate">Calculation</Link></Typography></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/information">Information</Link></Typography></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/consult">Consultation</Link></Typography></MenuItem>
+                {/* <MenuItem onClick={handleCloseNavMenu}><Typography textAlign="center"><Link href="/consult">Consultation</Link></Typography></MenuItem> */}
               </Menu>
             </Box>
 
@@ -110,7 +110,7 @@ const NavbarPage = () => {
               <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }} href="/consult">Consultation</Button>
             </Box>
 
-            <Box sx={{ flexGrow: 0 }}>
+            {/* <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -138,7 +138,7 @@ const NavbarPage = () => {
                   </MenuItem>
                 ))}
               </Menu>
-            </Box>
+            </Box> */}
           </Toolbar>
         </Container>
       </AppBar>

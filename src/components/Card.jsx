@@ -11,8 +11,8 @@ const CardPage = ({ title, description1, image, description2, number }) => {
   return (
     <Card
       sx={{
-        width: "100%", 
-        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', 
+        width: "100%",
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
         transition: '0.5s',
         '&:hover': {
           transform: 'scale(1.1)', /* Increase size by 20% on hover */
@@ -39,9 +39,12 @@ const CardPage = ({ title, description1, image, description2, number }) => {
           {description2}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" sx={{ color: "#a18b5c", fontWeight: 'bold' }}>Detail</Button>
-      </CardActions>
+      {title == "Home" ? <></> :
+        <CardActions>
+          <Button size="small" sx={{ color: "#a18b5c", fontWeight: 'bold' }}>Detail</Button>
+        </CardActions>
+      }
+
     </Card>
   )
 }
