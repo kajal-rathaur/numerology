@@ -1,6 +1,7 @@
 import { React } from "react";
 import videos from "../utils/videos/video1.mp4"
-import pic1 from "../utils/images/8.png"
+import pic1 from "../utils/images/3.jpeg"
+import pic2 from "../utils/images/1.jpeg"
 import Grid from '@mui/material/Unstable_Grid2';
 import Card from "../components/Card";
 
@@ -45,7 +46,7 @@ const Home = () => {
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-evenly', height: '400px', paddingTop: '20px', paddingBottom: '20px' }}>
                 <div style={{ width: '50%' }}>
-                    <img src={pic1} alt="Logo" style={{ height: '370px', width: '100%' }} />
+                    <img src={pic2} alt="Logo" style={{ height: '370px', width: '100%' }} />
                 </div>
                 <div style={{ width: '50%', color: '#a18b5c', textAlign: "left", padding: "0px 24px" }}>
                     <h2>Unveiling the Universe Within</h2>
